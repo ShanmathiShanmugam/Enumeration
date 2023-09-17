@@ -1,22 +1,18 @@
 # Enumeration
 Enumeration Techniques
 
-# Explore Google hacking and enumeration 
+### Explore Google hacking and enumeration 
 
-# AIM:
-
+## AIM:
 To use Google for gathering information and perform enumeration of targets
 
 ## STEPS:
 
 ### Step 1:
-
 Install kali linux either in partition or virtual box or in live mode
 
 ### Step 2:
-
 Investigate on the various Google hacking keywords and enumeration tools as follows:
-
 
 ### Step 3:
 Open terminal and try execute some kali linux commands
@@ -36,10 +32,7 @@ Following searches for all the sites that is in the domain yahoo.com
 filetype: This operator allows you to search for files of a specific type. For example, "filetype:pdf" would search for all PDF files.
 Following searches for pdf file in the domain yahoo.com
 
-
-
 intext: This operator allows you to search for pages that contain specific text within the body of the page. For example, "intext:password" would search for pages that contain the word "password" within the body of the page.
-
 
 inurl: This operator allows you to search for pages that contain specific text within the URL. For example, "inurl:admin" would search for pages that contain the word "admin" within the URL.
 
@@ -49,25 +42,45 @@ link: This operator allows you to search for pages that link to a specific URL. 
 
 cache: This operator allows you to view the cached version of a page. For example, "cache:example.com" would show the cached version of the example.com website.
 
- 
-#DNS Enumeration
+## OUTPUT:
+
+## site:
+
+![Screenshot 2023-09-17 123056](https://github.com/ShanmathiShanmugam/Enumeration/assets/121243595/8c0d1184-141e-4aaa-8a91-3ddd1844f11e)
+
+## filetype:
+
+![Screenshot 2023-09-17 123312](https://github.com/ShanmathiShanmugam/Enumeration/assets/121243595/87e84e7c-5c07-432a-a7d0-8facd35bbc6a)
+
+## intext:
+![image](https://github.com/ShanmathiShanmugam/Enumeration/assets/121243595/7665d4b8-c069-42a6-9d3c-302be7aed242)
+
+## inurl:
+
+![image](https://github.com/ShanmathiShanmugam/Enumeration/assets/121243595/28f23bcc-97c2-4dd8-9d14-a20789ed61d9)
+
+## intitle:
+
+![image](https://github.com/ShanmathiShanmugam/Enumeration/assets/121243595/7efe8ef6-51e0-4993-bacc-c389a5bd542f)
+
+## link:
+
+![image](https://github.com/ShanmathiShanmugam/Enumeration/assets/121243595/fcda5d2e-4435-4e9c-a230-1214593bae8d)
+
+## cache:
+
+![image](https://github.com/ShanmathiShanmugam/Enumeration/assets/121243595/5e3d7922-10bf-4eb9-ba23-68417a2b84c1)
 
 
-##DNS Recon
+# DNS Enumeration
+## DNS Recon
 provides the ability to perform:
 Check all NS records for zone transfers
 Enumerate general DNS records for a given domain (MX, SOA, NS, A, AAAA, SPF , TXT)
 Perform common SRV Record Enumeration
 Top level domain expansion
-## OUTPUT:
 
-
-
-
-
-
-
-##dnsenum
+## dnsenum
 Dnsenum is a multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks. The main purpose of Dnsenum is to gather as much information as possible about a domain. The program currently performs the following operations:
 
 Get the host’s addresses (A record).
@@ -81,8 +94,7 @@ Perform reverse lookups on netranges (C class or/and whois netranges) (threaded)
 Write to domain_ips.txt file ip-blocks.
 This program is useful for pentesters, ethical hackers and forensics experts. It also can be used for security tests.
 
-
-##smtp-user-enum
+## smtp-user-enum
 Username guessing tool primarily for use against the default Solaris SMTP service. Can use either EXPN, VRFY or RCPT TO.
 
 
@@ -91,22 +103,27 @@ In metasploit list all the usernames using head /etc/passwd or cat /etc/passwd:
 select any username in the first column of the above file and check the same
 
 
-#Telnet for smtp enumeration
+## Telnet for smtp enumeration
 Telnet allows to connect to remote host based on the port no. For smtp port no is 25
 telnet <host address> 25 to connect
 and issue appropriate commands
   
- ##Output
-  
-  
-
 ## nmap –script smtp-enum-users.nse <hostname>
-
 The smtp-enum-users.nse script attempts to enumerate the users on a SMTP server by issuing the VRFY, EXPN or RCPT TO commands. The goal of this script is to discover all the user accounts in the remote system.
 
-
 ## OUTPUT:
+### DNS Recon
+![image](https://github.com/ShanmathiShanmugam/Enumeration/assets/121243595/8bfc3366-f83c-4337-92e7-6cdddd949e4d)
+![image](https://github.com/ShanmathiShanmugam/Enumeration/assets/121243595/96842532-0cf6-4a2e-8051-43c8770380ed)
 
+### dnsenum
+![image](https://github.com/ShanmathiShanmugam/Enumeration/assets/121243595/78b8b69c-22f0-4c3b-8bc8-c15cfba7af8b)
+
+### smtp-user-enum
+![image](https://github.com/ShanmathiShanmugam/Enumeration/assets/121243595/54a82c27-0458-4852-8148-338a5de3caca)
+
+### nmap –script smtp-enum-users.nse 
+![image](https://github.com/ShanmathiShanmugam/Enumeration/assets/121243595/ded555c6-6987-4f44-b7fd-2849176985a3)
 
 ## RESULT:
 The Google hacking keywords and enumeration tools were identified and executed successfully
